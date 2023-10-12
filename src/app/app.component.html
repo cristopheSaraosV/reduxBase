@@ -1,0 +1,24 @@
+<div class="row justify-content-center my-5">
+  <div class="col text-center">
+    <div class="container p-4">
+      <div class="form-group">
+          <input #inputValue type="text" class="form-control" aria-describedby="nameHelp" placeholder="Nombre">
+      </div>
+      <h1 class="text-dark mt-4"><strong>{{editor}}</strong></h1>
+
+    </div>
+    <h1 class="mb-3">
+      Contador: <strong>{{ contador }}</strong>
+    </h1>
+    <button (click)="incrementar()" class="btn btn-primary me-2">
+      Incrementar
+    </button>
+    <button (click)="decrementar()" class="btn btn-warning">Decrementar</button>
+    <button (click)="cambiarEditor(inputValue.value)" class="btn btn-dark ms-5">Editor</button>
+  </div>
+</div>
+
+<div class="row text-center">
+  <app-hijo></app-hijo>
+  <app-nieto></app-nieto>
+</div>
